@@ -1,0 +1,19 @@
+<section class="section section--dark review" aria-labelledby="review-title">
+      <div class="container review-inner">
+        <h2 class="sr-only" id="review-title">Das sagen unsere Gäste</h2>
+        <div class="review-stars" data-reveal role="img" aria-label="5 von 5 Sternen">
+          <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+        </div>
+        <blockquote class="review-quote" data-reveal>
+          <p>„{{bewertung.zitat_1}}<br><em>{{bewertung.zitat_2}}</em>“</p>
+          <footer>{{bewertung.autor}} · Bewertung auf {{bewertung.quelle}} · {{bewertung.datum}}</footer>
+        </blockquote>
+        <div class="review-cta" data-reveal>
+          <p>Du warst schon bei uns? Wir freuen uns über deine ehrliche Bewertung.</p>
+          <a class="btn btn--ghost" href="{{google_bewerten}}" target="_blank" rel="noopener">
+            Auf Google bewerten <svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>
+          </a>
+        </div>
+        <p class="review-note">Wörtliches Zitat aus einer öffentlichen Bewertung auf {{bewertung.quelle}}; Gesamtbewertung {{bewertung.wert}} von 5 (Stand {{bewertung.stand}}). Wir selbst prüfen nicht, ob Bewertende unsere Speisen tatsächlich gekauft haben.</p>
+      </div>
+    </section>

@@ -1,0 +1,305 @@
+---
+titel: Arin's Kebap & Pizza Haus Beilngries – Döner, Pizza, Lahmacun & Falafel
+beschreibung: Döner, Dürüm, Lahmacun, Pide, Falafel und über 20 Pizzen in Beilngries – frisch vom Spieß, heiß aus dem Ofen. {{zeiten.kurz}}, Ringstraße 22, gegenüber der Polizei. Vorbestellen: {{telefon.anzeige}}.
+seite: start
+nav: start
+schema: restaurant
+koerper: page-home
+hero_bild: ja
+---
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="embers" data-embers aria-hidden="true"></canvas>
+      <div class="hero-bgword" aria-hidden="true">{{ort}}</div>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <a class="hero-pill hero-in" style="--i:0" href="ueber-uns.html#neustart">
+            <span class="hero-pill-tag">Neu</span>
+            <span>Unter neuer Leitung – jetzt als {{kurzname_typo}}</span>
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <h1 class="hero-title" id="hero-title">
+            <span class="line hero-in" style="--i:1">Frisch vom <em class="accent">Spieß.</em></span>
+            <span class="line hero-in" style="--i:2">Heiß aus dem<br class="br-mobile"> <em class="accent">Ofen.</em></span>
+          </h1>
+          <p class="hero-lead hero-in" style="--i:3">
+            Döner, Dürüm, Lahmacun, Pide und über 20 Pizzen – frisch gemacht, großzügig portioniert und schnell auf der Hand.
+            Mitten in {{ort}}, direkt gegenüber der Polizei.
+          </p>
+          <div class="hero-ctas hero-in" style="--i:4">
+            <a class="btn btn--fire btn--lg" href="tel:{{telefon.link}}">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+              Anrufen &amp; vorbestellen
+            </a>
+            <a class="btn btn--ghost btn--lg" href="speisekarte.html">
+              Zur Speisekarte
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+          <ul class="hero-facts hero-in" style="--i:5">
+            <li class="fact">{{zeiten:fakt}}</li>
+            <li class="fact">
+              <strong>{{bewertung.wert}} <svg class="icon icon--star" aria-hidden="true"><use href="#i-star"/></svg></strong>
+              <span>auf {{bewertung.quelle}}</span>
+            </li>
+            <li class="fact">
+              <strong>Terrasse</strong>
+              <span>&amp; Takeaway</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual hero-in" style="--i:2" data-orbit="Döner · Dürüm · Lahmacun · Pide · Pizza · Falafel">
+          <div class="arch-glow" aria-hidden="true"></div>
+          <canvas class="orbit orbit--back" data-orbit-back aria-hidden="true"></canvas>
+          <div class="arch">
+            <img src="assets/img/hero-spiess-960.webp"
+                 srcset="assets/img/hero-spiess-640.webp 640w, assets/img/hero-spiess-960.webp 960w, assets/img/hero-spiess-1400.webp 1400w"
+                 sizes="(max-width: 900px) 84vw, 440px"
+                 width="960" height="1439" fetchpriority="high" alt="Dönerspieß vor offener Flamme, frisch angeschnitten">
+          </div>
+          <div class="arch-ring" aria-hidden="true"></div>
+          <canvas class="orbit orbit--front" data-orbit-front aria-hidden="true"></canvas>
+
+          <div class="review-sticker">
+            <div class="stars" aria-hidden="true">
+              <svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg>
+            </div>
+            <p>„{{bewertung.zitat_2}}“</p>
+            <span>{{bewertung.quelle}} · {{bewertung.wert}}</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#kapitel" aria-label="Weiter nach unten scrollen"><span></span></a>
+    </section>
+
+    <!-- ===================== BÄNDER ===================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="band band--cream">
+        <div class="band-track">
+          <span>Frisch</span><svg class="icon"><use href="#i-burst"/></svg><span>Schnell</span><svg class="icon"><use href="#i-burst"/></svg><span>Großzügig</span><svg class="icon"><use href="#i-burst"/></svg><span>Unter neuer Leitung</span><svg class="icon"><use href="#i-burst"/></svg><span>{{ort}}</span><svg class="icon"><use href="#i-burst"/></svg>
+          <span>Frisch</span><svg class="icon"><use href="#i-burst"/></svg><span>Schnell</span><svg class="icon"><use href="#i-burst"/></svg><span>Großzügig</span><svg class="icon"><use href="#i-burst"/></svg><span>Unter neuer Leitung</span><svg class="icon"><use href="#i-burst"/></svg><span>{{ort}}</span><svg class="icon"><use href="#i-burst"/></svg>
+        </div>
+      </div>
+      <div class="band band--fire">
+        <div class="band-track">
+          <span>Döner</span><svg class="icon"><use href="#i-burst"/></svg><span>Dürüm</span><svg class="icon"><use href="#i-burst"/></svg><span>Lahmacun</span><svg class="icon"><use href="#i-burst"/></svg><span>Pide</span><svg class="icon"><use href="#i-burst"/></svg><span>Pizza</span><svg class="icon"><use href="#i-burst"/></svg><span>Falafel</span><svg class="icon"><use href="#i-burst"/></svg><span>Salate</span><svg class="icon"><use href="#i-burst"/></svg>
+          <span>Döner</span><svg class="icon"><use href="#i-burst"/></svg><span>Dürüm</span><svg class="icon"><use href="#i-burst"/></svg><span>Lahmacun</span><svg class="icon"><use href="#i-burst"/></svg><span>Pide</span><svg class="icon"><use href="#i-burst"/></svg><span>Pizza</span><svg class="icon"><use href="#i-burst"/></svg><span>Falafel</span><svg class="icon"><use href="#i-burst"/></svg><span>Salate</span><svg class="icon"><use href="#i-burst"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== NEUES KAPITEL ===================== -->
+    <section class="section section--paper intro" id="kapitel" aria-labelledby="intro-title">
+      <div class="container">
+        <p class="kicker" data-reveal><span class="kicker-no">01</span>Neues Kapitel</p>
+        <div class="intro-grid">
+          <h2 class="intro-title" id="intro-title" data-reveal>Der Laden gegenüber der Polizei heißt jetzt <em class="accent">{{kurzname_typo}}.</em></h2>
+          <div class="intro-body" data-reveal style="--d:.12s">
+            <p class="intro-lead">Neuer Inhaber, neuer Name, moderner Laden – und ein klares Ziel: Döner und Pizza, von denen man in {{ort}} erzählt.</p>
+            <p>Der Spieß dreht sich, der Ofen ist heiß, die Theke ist offen. Wer früher schon hier war: Schau rein und probier dich durch. Wer zum ersten Mal kommt: Der Döner ist ein guter Anfang.</p>
+            <a class="link-arrow" href="ueber-uns.html">Mehr über {{kurzname_typo}} <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+
+        <ol class="promises">
+          <li data-reveal><span class="promises-no">01</span><strong>Frisch vom Spieß</strong><span>Geschnitten wird, wenn du bestellst.</span></li>
+          <li data-reveal style="--d:.06s"><span class="promises-no">02</span><strong>Großzügig portioniert</strong><span>Hungrig geht hier keiner.</span></li>
+          <li data-reveal style="--d:.12s"><span class="promises-no">03</span><strong>Schnell auf der Hand</strong><span>Perfekt für die Mittagspause.</span></li>
+          <li data-reveal style="--d:.18s"><span class="promises-no">04</span><strong>{{stat.vegetarisch}}&#8239;× vegetarisch</strong><span>Falafel, Pide, Pizza &amp; Salate.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== KLASSIKER ===================== -->
+    <section class="section section--paper klassiker" id="klassiker" aria-labelledby="klassiker-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="kicker"><span class="kicker-no">02</span>Klassiker</p>
+            <h2 class="section-title" id="klassiker-title">Sechs gute Gründe,<br>heute <em class="accent">nicht</em> zu kochen.</h2>
+          </div>
+          <p class="section-intro">Vom Döner im knusprigen Fladenbrot bis zur Pizza mit Sucuk und scharfen Peperoni: Das sind unsere Klassiker – und jeder einzelne ist eine Sünde wert.</p>
+        </div>
+
+        <div class="dishes">
+          <a class="dish dish--xl" href="speisekarte.html#kat-doener" data-reveal>
+            <img src="assets/img/doener-800.webp" srcset="assets/img/doener-480.webp 480w, assets/img/doener-800.webp 800w, assets/img/doener-1200.webp 1200w" sizes="(max-width: 640px) 84vw, (max-width: 1024px) 92vw, 600px" width="800" height="1200" loading="lazy" decoding="async" alt="Döner im knusprigen Fladenbrot mit Fleisch, Salat und Soße auf einem Holzbrett" style="object-position: 50% 48%">
+            <span class="dish-tag"><svg class="icon" aria-hidden="true"><use href="#i-flame"/></svg> Der Klassiker</span>
+            <span class="dish-price"><small>nur</small>{{preis:Döner}}</span>
+            <span class="dish-body">
+              <span class="dish-no">N°&#8239;01</span>
+              <span class="dish-name">Döner</span>
+              <span class="dish-desc">Im knusprigen Fladenbrot, mit frischem Salat und Soße nach Wahl. Der Klassiker – und das zu Recht.</span>
+              <span class="dish-link">Alle {{anzahl:doener}} Döner-Varianten <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </span>
+          </a>
+
+          <a class="dish dish--wide" href="speisekarte.html#kat-pizza" data-reveal style="--d:.08s">
+            <img src="assets/img/pizza-slice-800.webp" srcset="assets/img/pizza-slice-480.webp 480w, assets/img/pizza-slice-800.webp 800w, assets/img/pizza-slice-1200.webp 1200w" sizes="(max-width: 640px) 84vw, (max-width: 1024px) 92vw, 600px" width="800" height="533" loading="lazy" decoding="async" alt="Pizzastück mit langen Käsefäden wird aus der Pizza gehoben" style="object-position: 40% 55%">
+            <span class="dish-tag dish-tag--dark"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg> Haus-Tipp</span>
+            <span class="dish-price">{{preis:Arin's Pizza}}</span>
+            <span class="dish-body">
+              <span class="dish-no">N°&#8239;02</span>
+              <span class="dish-name">{{kurzname_typo}} Pizza</span>
+              <span class="dish-desc">Mit Sucuk, Champignons und scharfen Peperoni. Eine von {{stat.pizzen}} Pizzen – ab {{preis:Margherita}}.</span>
+            </span>
+          </a>
+
+          <a class="dish" href="speisekarte.html#kat-duerum" data-reveal style="--d:.12s">
+            <img src="assets/img/duerum-800.webp" srcset="assets/img/duerum-480.webp 480w, assets/img/duerum-800.webp 800w, assets/img/duerum-1200.webp 1200w" sizes="(max-width: 640px) 84vw, (max-width: 1024px) 46vw, 300px" width="800" height="481" loading="lazy" decoding="async" alt="Gerollte Dürüm-Wraps mit Fleisch und Salat" style="object-position: 70% 50%">
+            <span class="dish-price">{{preis:Dürüm}}</span>
+            <span class="dish-body">
+              <span class="dish-no">N°&#8239;03</span>
+              <span class="dish-name">Dürüm</span>
+              <span class="dish-desc">Im dünnen Yufka gerollt – perfekt für unterwegs.</span>
+            </span>
+          </a>
+
+          <a class="dish" href="speisekarte.html#kat-lahmacun" data-reveal style="--d:.16s">
+            <img src="assets/img/lahmacun-800.webp" srcset="assets/img/lahmacun-480.webp 480w, assets/img/lahmacun-800.webp 800w, assets/img/lahmacun-1200.webp 1200w" sizes="(max-width: 640px) 84vw, (max-width: 1024px) 46vw, 300px" width="800" height="533" loading="lazy" decoding="async" alt="Lahmacun mit Hackfleisch, Petersilie und Zitrone von oben" style="object-position: 38% 50%">
+            <span class="dish-price"><small>ab</small>{{preis:Lahmacun mit Weißkäse}}</span>
+            <span class="dish-body">
+              <span class="dish-no">N°&#8239;04</span>
+              <span class="dish-name">Lahmacun</span>
+              <span class="dish-desc">Dünn, würzig, knusprig. Auf Wunsch mit Döner.</span>
+            </span>
+          </a>
+
+          <a class="dish dish--wide" href="speisekarte.html#kat-pide" data-reveal style="--d:.08s">
+            <img src="assets/img/pide-800.webp" srcset="assets/img/pide-480.webp 480w, assets/img/pide-800.webp 800w, assets/img/pide-1200.webp 1200w" sizes="(max-width: 640px) 84vw, (max-width: 1024px) 92vw, 600px" width="800" height="533" loading="lazy" decoding="async" alt="Pide mit Hackfleisch, dazu Salat und Pommes" style="object-position: 60% 50%">
+            <span class="dish-price"><small>ab</small>{{preis:Pide mit Käse}}</span>
+            <span class="dish-body">
+              <span class="dish-no">N°&#8239;05</span>
+              <span class="dish-name">Pide</span>
+              <span class="dish-desc">Das türkische Schiffchen, frisch aus dem Ofen – mit Käse, Sucuk, Hackfleisch, Spinat oder Döner.</span>
+            </span>
+          </a>
+
+          <a class="dish dish--wide" href="speisekarte.html#kat-teller" data-reveal style="--d:.12s">
+            <img src="assets/img/falafel-800.webp" srcset="assets/img/falafel-480.webp 480w, assets/img/falafel-800.webp 800w, assets/img/falafel-1200.webp 1200w" sizes="(max-width: 640px) 84vw, (max-width: 1024px) 92vw, 600px" width="800" height="533" loading="lazy" decoding="async" alt="Knusprige Falafel, eine davon aufgebrochen" style="object-position: 50% 50%">
+            <span class="dish-tag dish-tag--veg"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg> Veggie</span>
+            <span class="dish-price"><small>ab</small>{{preis:Falafel im Brot}}</span>
+            <span class="dish-body">
+              <span class="dish-no">N°&#8239;06</span>
+              <span class="dish-name">Falafel</span>
+              <span class="dish-desc">Außen knusprig, innen saftig – im Brot, als Dürüm, Box oder Teller.</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="klassiker-more" data-reveal>
+          <a class="btn btn--dark btn--lg" href="speisekarte.html">Die ganze Karte: {{stat.gerichte}} Gerichte <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HANDWERK ===================== -->
+    <section class="section section--dark craft" aria-labelledby="craft-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="kicker"><span class="kicker-no">03</span>Handwerk</p>
+            <h2 class="section-title" id="craft-title">Vom Feuer<br><em class="accent">auf die Hand.</em></h2>
+          </div>
+          <p class="section-intro">Zwei Feuer, eine Theke: Am Spieß wird geschnitten, im Ofen gebacken – und zwar dann, wenn du bestellst.</p>
+        </div>
+
+        <div class="craft-grid">
+          <div class="craft-media" aria-hidden="true">
+            <figure class="craft-frame is-shown" data-frame="1"><img src="assets/img/spiess-schnitt-800.webp" srcset="assets/img/spiess-schnitt-800.webp 800w, assets/img/spiess-schnitt-1200.webp 1200w" sizes="(max-width: 900px) 1px, 560px" width="800" height="630" loading="lazy" decoding="async" alt=""></figure>
+            <figure class="craft-frame" data-frame="2"><img src="assets/img/pizza-ofen-1000.webp" srcset="assets/img/pizza-ofen-1000.webp 1000w, assets/img/pizza-ofen-1800.webp 1800w" sizes="(max-width: 900px) 1px, 560px" width="1000" height="800" loading="lazy" decoding="async" alt="" style="object-position: 50% 60%"></figure>
+            <figure class="craft-frame" data-frame="3"><img src="assets/img/doener-teller-800.webp" srcset="assets/img/doener-teller-480.webp 480w, assets/img/doener-teller-800.webp 800w" sizes="(max-width: 900px) 1px, 560px" width="800" height="530" loading="lazy" decoding="async" alt=""></figure>
+            <div class="craft-count"><span data-craft-current>01</span><span class="craft-count-total"> / 03</span></div>
+            <div class="craft-progress"><span data-craft-bar></span></div>
+          </div>
+
+          <ol class="craft-steps">
+            <li class="craft-step is-active" data-step="1">
+              <img class="craft-step-img" src="assets/img/spiess-schnitt-800.webp" srcset="assets/img/spiess-schnitt-480.webp 480w, assets/img/spiess-schnitt-800.webp 800w" sizes="(min-width: 901px) 1px, 92vw" width="800" height="630" loading="lazy" decoding="async" alt="Dönerfleisch wird mit dem langen Messer vom Spieß geschnitten">
+              <span class="craft-no" aria-hidden="true">01</span>
+              <h3>Der Spieß</h3>
+              <p>Er dreht sich vor der Flamme, bis die Außenseite knusprig ist. Geschnitten wird erst, wenn du bestellst – dünn, saftig und heiß.</p>
+            </li>
+            <li class="craft-step" data-step="2">
+              <img class="craft-step-img" src="assets/img/pizza-ofen-1000.webp" sizes="(min-width: 901px) 1px, 92vw" width="1000" height="800" loading="lazy" decoding="async" alt="Pizza vor dem glühenden Ofen">
+              <span class="craft-no" aria-hidden="true">02</span>
+              <h3>Der Ofen</h3>
+              <p>Pizza, Pide und Lahmacun backen bei voller Hitze, bis der Rand Blasen wirft und der Käse Fäden zieht.</p>
+            </li>
+            <li class="craft-step" data-step="3">
+              <img class="craft-step-img" src="assets/img/doener-teller-800.webp" srcset="assets/img/doener-teller-480.webp 480w, assets/img/doener-teller-800.webp 800w" sizes="(min-width: 901px) 1px, 92vw" width="800" height="530" loading="lazy" decoding="async" alt="Döner im Fladenbrot mit Pommes und Petersilie">
+              <span class="craft-no" aria-hidden="true">03</span>
+              <h3>Die Theke</h3>
+              <p>Fladenbrot oder Yufka, frischer Salat, Soße nach Wahl – gebaut, wie du es willst. Auf die Hand, in die Box oder auf den Teller.</p>
+            </li>
+          </ol>
+        </div>
+
+        <ul class="stats" data-reveal>
+          <li><strong><span data-count-to="{{stat.gerichte}}">{{stat.gerichte}}</span></strong><span>Gerichte auf der Karte</span></li>
+          <li><strong><span data-count-to="{{stat.pizzen}}">{{stat.pizzen}}</span></strong><span>Pizzen aus dem Ofen</span></li>
+          <li><strong><span data-count-to="{{stat.vegetarisch}}">{{stat.vegetarisch}}</span></strong><span>vegetarische Gerichte</span></li>
+          <li><strong>{{bewertung.wert}}<svg class="icon icon--star" aria-hidden="true"><use href="#i-star"/></svg></strong><span>auf {{bewertung.quelle}}</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== PIZZA-BANNER ===================== -->
+    <section class="banner" aria-labelledby="banner-title">
+      <img class="banner-img" data-parallax src="assets/img/pizza-ofen-1800.webp" srcset="assets/img/pizza-ofen-1000.webp 1000w, assets/img/pizza-ofen-1800.webp 1800w" sizes="100vw" width="1800" height="1440" loading="lazy" decoding="async" alt="">
+      <div class="banner-content container" data-reveal>
+        <p class="eyebrow">Pizza Haus</p>
+        <h2 class="banner-title" id="banner-title">Pizza, wie sie sein soll:<br><em class="accent">heiß, knusprig, käsig.</em></h2>
+        <p>{{stat.pizzen}} Sorten – von der Margherita bis zur Pizza {{ort}} mit Dönerfleisch, Peperoni und Paprika.</p>
+        <a class="btn btn--fire btn--lg" href="speisekarte.html#kat-pizza">Zur Pizza-Karte <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
+
+    <!-- ===================== BEWERTUNG ===================== -->
+    {{> bewertung}}
+
+    <!-- ===================== BESUCH ===================== -->
+    <section class="section section--coal visit-teaser" aria-labelledby="visit-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="kicker"><span class="kicker-no">04</span>Besuch</p>
+            <h2 class="section-title" id="visit-title">Der wohl <em class="accent">sicherste Döner</em><br>in ganz {{ort}}.</h2>
+          </div>
+          <p class="section-intro">{{strasse}}, {{lagehinweis}}. Nicht zu verfehlen – und falls doch: Die Kollegen gegenüber helfen sicher gern weiter.</p>
+        </div>
+
+        <div class="visit-grid">
+          <div class="card dial-card" data-reveal>
+            <div class="dial" data-dial aria-hidden="true"></div>
+            <div class="dial-info">
+              <div class="live-status" data-status>
+                <span class="status-dot" aria-hidden="true"></span>
+                <div>
+                  <strong data-status-title>{{#if zeiten.taeglich}}Täglich geöffnet{{else}}Öffnungszeiten{{/if}}</strong>
+                  <span data-status-detail>{{zeiten.kurz}}</span>
+                </div>
+              </div>
+              <p class="dial-hours">{{#if zeiten.taeglich}}Montag bis Sonntag, {{zeiten.von_bis}} Uhr{{else}}{{zeiten.kurz}}{{/if}}</p>
+              <div class="address-actions">
+                <a class="btn btn--fire" data-route href="{{route.google}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg> Route planen</a>
+                <a class="btn btn--ghost" href="besuch.html">Alle Infos <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </div>
+
+          <figure class="map-card" data-reveal style="--d:.1s">
+            <a class="map-link" data-route href="{{route.google}}" target="_blank" rel="noopener" aria-label="Route zu {{name}} in Google Maps öffnen">
+{{karte}}
+              <span class="map-hint"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg> Route öffnen</span>
+            </a>
+            <figcaption>Kartendaten © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>-Mitwirkende</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    {{> callband}}

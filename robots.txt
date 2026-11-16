@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /tools/
+
+Sitemap: https://cute-marzipan-b243d6.netlify.app/sitemap.xml

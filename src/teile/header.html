@@ -1,0 +1,32 @@
+<header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="{{name_typo}} – zur Startseite">
+        <svg class="logo-mark" aria-hidden="true"><use href="#logo-flame"/></svg>
+        <span class="logo-text">
+          <span class="logo-name">{{kurzname_typo}}</span>
+          <span class="logo-sub">{{unterzeile}}</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="speisekarte.html"{{aktiv:speisekarte}}>Speisekarte</a>
+        <a href="ueber-uns.html"{{aktiv:ueber-uns}}>Über uns</a>
+        <a href="besuch.html"{{aktiv:besuch}}>Zeiten &amp; Anfahrt</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="status" href="besuch.html#zeiten" data-status>
+          <span class="status-dot" aria-hidden="true"></span>
+          <span data-status-short>{{zeiten.kurz}}</span>
+        </a>
+        <a class="btn btn--fire btn--sm header-call" href="tel:{{telefon.link}}">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+          <span>{{telefon.anzeige}}</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menü öffnen">
+          <svg class="icon icon--open" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon icon--close" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>

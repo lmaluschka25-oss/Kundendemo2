@@ -1,0 +1,60 @@
+<footer class="site-footer">
+    <div class="container footer-top">
+      <p class="footer-claim">Frisch vom <em class="accent">Spieß.</em><br>Heiß aus dem <em class="accent">Ofen.</em></p>
+      <div class="footer-top-cta">
+        <a class="btn btn--fire btn--lg" href="tel:{{telefon.link}}">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> {{telefon.anzeige}}
+        </a>
+        <a class="btn btn--ghost btn--lg" data-route href="{{route.google}}" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-route"/></svg> Route planen
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html" aria-label="{{name_typo}} – zur Startseite">
+          <svg class="logo-mark" aria-hidden="true"><use href="#logo-flame"/></svg>
+          <span class="logo-text">
+            <span class="logo-name">{{kurzname_typo}}</span>
+            <span class="logo-sub">{{unterzeile}}</span>
+          </span>
+        </a>
+        <p>Döner, Pizza, Lahmacun, Pide und Falafel – frisch zubereitet in der {{strasse}} in {{ort}}.</p>
+      </div>
+      <div>
+        <h2>Besuch</h2>
+        <address>{{strasse}}<br>{{plz}} {{ort}}</address>
+        <p><a href="tel:{{telefon.link}}">{{telefon.anzeige}}</a></p>
+      </div>
+      <div>
+        <h2>Öffnungszeiten</h2>
+        <p>{{#if zeiten.taeglich}}Montag – Sonntag<br>{{zeiten.von_bis}} Uhr{{else}}{{zeiten.kurz}}{{/if}}</p>
+        <p class="footer-status" data-status><span class="status-dot" aria-hidden="true"></span><span data-status-short>{{zeiten.kurz}}</span></p>
+      </div>
+      <nav aria-label="Seiten">
+        <h2>Entdecken</h2>
+        <ul class="footer-links">
+          <li><a href="speisekarte.html">Speisekarte</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="besuch.html">Zeiten &amp; Anfahrt</a></li>
+          <li><a href="besuch.html#fragen">Häufige Fragen</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Rechtliches">
+        <h2>Rechtliches</h2>
+        <ul class="footer-links">
+          <li><a href="impressum.html"{{aktiv:impressum}}>Impressum</a></li>
+          <li><a href="datenschutz.html"{{aktiv:datenschutz}}>Datenschutz</a></li>
+          <li><a href="agb.html"{{aktiv:agb}}>AGB</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-mark" aria-hidden="true"><span>{{kurzname_typo}}</span></div>
+
+    <div class="container footer-bottom">
+      <p>© <span data-year>{{jahr}}</span> {{name_typo}} · {{ort}}</p>
+      <p class="footer-coords">{{koord:lat}} · {{koord:lon}}</p>
+    </div>
+  </footer>

@@ -1,0 +1,57 @@
+{
+  "_hinweis": "Zentrale Betriebsdaten für ALLE Seiten (inkl. Impressum, Datenschutz, AGB). Leere Felder erscheinen auf der Website als gelb markierte Platzhalter. Nach jeder Änderung im Projektordner ausführen: node tools/build.mjs",
+
+  "name": "Arin's Kebap & Pizza Haus",
+  "kurzname": "Arin's",
+  "unterzeile": "Kebap & Pizza Haus",
+
+  "inhaber": "",
+  "email": "",
+  "ust_id": "",
+  "wirtschafts_id": "",
+  "handelsregister": "",
+  "aufsichtsbehoerde": "",
+
+  "strasse": "Ringstraße 22",
+  "plz": "92339",
+  "ort": "Beilngries",
+  "region": "Bayern",
+  "land": "DE",
+  "lagehinweis": "direkt gegenüber der Polizeiinspektion",
+  "geo": { "lat": 49.035659, "lon": 11.470867 },
+
+  "telefon": { "anzeige": "08461 7052857", "link": "+4984617052857", "international": "+49 8461 7052857" },
+
+  "oeffnungszeiten": {
+    "mo": [["10:30", "20:30"]],
+    "di": [["10:30", "20:30"]],
+    "mi": [["10:30", "20:30"]],
+    "do": [["10:30", "20:30"]],
+    "fr": [["10:30", "20:30"]],
+    "sa": [["10:30", "20:30"]],
+    "so": [["10:30", "20:30"]]
+  },
+  "zeiten_hinweis": "An Feiertagen können die Öffnungszeiten abweichen – ruf im Zweifel kurz an.",
+
+  "bewertung": {
+    "quelle": "Tripadvisor",
+    "wert": "5,0",
+    "zitat_1": "Sehr gut Service.",
+    "zitat_2": "Schnell und lecker!",
+    "autor": "Petronella C.",
+    "datum": "April 2026",
+    "stand": "November 2026"
+  },
+  "google_bewerten": "https://www.google.com/maps/search/?api=1&query=Arin%27s%20Kebap%20%26%20Pizza%20Haus%20Beilngries",
+
+  "website": "https://cute-marzipan-b243d6.netlify.app",
+
+  "hosting": {
+    "anbieter": "Netlify, Inc.",
+    "adresse": "101 2nd Street, San Francisco, CA 94105, USA",
+    "datenschutz": "https://www.netlify.com/privacy/",
+    "log_speicherdauer": ""
+  },
+
+  "rechtstexte_stand": "November 2026"
+}

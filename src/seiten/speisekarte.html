@@ -1,0 +1,146 @@
+---
+titel: Speisekarte – Arin's Kebap & Pizza Haus Beilngries
+beschreibung: Die komplette Speisekarte von Arin's in Beilngries: {{stat.gerichte}} Gerichte – Döner, Dürüm, Boxen, Teller, Lahmacun, Pide, {{stat.pizzen}} Pizzen, Salate, Snacks und Getränke. Mit Preisen, Veggie-Filter und Bestellzettel.
+seite: speisekarte
+nav: speisekarte
+schema: menu
+krume: Speisekarte
+koerper: page-menu
+---
+    <!-- ===================== KOPF ===================== -->
+    <section class="page-hero page-hero--menu" aria-labelledby="page-title">
+      <canvas class="embers" data-embers aria-hidden="true"></canvas>
+      <div class="container page-hero-grid">
+        <div class="page-hero-copy">
+          <p class="eyebrow hero-in" style="--i:0">Speisekarte · {{stat.gerichte}} Gerichte</p>
+          <h1 class="page-title hero-in" id="page-title" style="--i:1">Worauf hast du <em class="accent">heute</em> Lust?</h1>
+          <p class="page-lead hero-in" style="--i:2">Alles frisch zubereitet. Stell dir deine Bestellung auf dem Bestellzettel zusammen, ruf an – und dein Essen ist fertig, wenn du kommst.</p>
+          <p class="print-only">{{name}} · {{strasse}} · {{plz}} {{ort}} · Telefon {{telefon.anzeige}} · {{zeiten.kurz}}</p>
+          <ol class="howto hero-in" style="--i:3">
+            <li><span class="howto-no">1</span><strong>Auswählen</strong><span>Tippe auf <span class="howto-plus" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span><span class="sr-only">Plus</span> bei deinen Gerichten.</span></li>
+            <li><span class="howto-no">2</span><strong>Anrufen</strong><span><a href="tel:{{telefon.link}}">{{telefon.anzeige}}</a> – Zettel vorlesen.</span></li>
+            <li><span class="howto-no">3</span><strong>Abholen</strong><span>Heiß und fertig, ohne Wartezeit.</span></li>
+          </ol>
+        </div>
+        <nav class="menu-index hero-in" style="--i:2" aria-label="Kategorien der Speisekarte">
+          <p class="menu-index-title">Inhalt</p>
+        {{menu:index}}
+        </nav>
+      </div>
+    </section>
+
+    <!-- ===================== KARTE ===================== -->
+    <section class="menu section--paper" aria-label="Speisekarte mit Preisen">
+      <div class="menu-toolbar">
+        <nav class="menu-chips" aria-label="Zu Kategorie springen">
+          {{menu:chips}}
+        </nav>
+        <div class="menu-filters">
+          <label class="menu-search">
+            <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+            <span class="sr-only">Gericht suchen</span>
+            <input type="search" placeholder="Gericht suchen …" autocomplete="off" enterkeyhint="search" data-menu-search>
+          </label>
+          <label class="veg-toggle">
+            <input type="checkbox" data-menu-veg>
+            <span class="veg-toggle-ui" aria-hidden="true"></span>
+            <span><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg> <span class="veg-long">Nur vegetarisch</span><span class="veg-short">Veggie</span></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="container menu-layout">
+        <div class="menu-list" data-menu>
+{{menu:liste}}
+          <div class="menu-empty" data-menu-empty hidden>
+            <p><strong>Nichts gefunden.</strong> Ruf trotzdem an – vielleicht machen wir’s dir möglich.</p>
+            <a class="btn btn--dark" href="tel:{{telefon.link}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> {{telefon.anzeige}}</a>
+          </div>
+          <p class="menu-footnote">{{menu:fussnote}} Es gelten unsere <a href="agb.html">AGB</a>.</p>
+        </div>
+
+        <aside class="ticket-wrap" id="bestellzettel" aria-labelledby="ticket-title" data-ticket-wrap>
+          <div class="ticket-backdrop" data-ticket-close aria-hidden="true"></div>
+          <div class="ticket-sheet" data-ticket-sheet tabindex="-1">
+            <div class="ticket" data-ticket>
+              <div class="ticket-paper">
+              <div class="ticket-head">
+                <div>
+                  <p class="ticket-kicker">{{kurzname_typo}} · {{ort}}</p>
+                  <h2 class="ticket-title" id="ticket-title">Bestellzettel</h2>
+                </div>
+                <button class="ticket-close" type="button" data-ticket-close aria-label="Bestellzettel schließen"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+              </div>
+              <p class="ticket-meta"><span data-ticket-date>Heute</span><span>Tel. {{telefon.anzeige}}</span></p>
+
+              <div class="ticket-empty" data-ticket-empty>
+                <svg class="icon" aria-hidden="true"><use href="#i-receipt"/></svg>
+                <p><strong>Noch leer.</strong> Tippe bei einem Gericht auf <span class="howto-plus" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span><span class="sr-only">Plus</span> – dein Zettel füllt sich hier. Dann anrufen, vorlesen, abholen.</p>
+              </div>
+
+              <ul class="ticket-list" data-ticket-list></ul>
+
+              <div class="ticket-total" data-ticket-total hidden>
+                <span>Summe · <span data-ticket-items>0</span> Artikel</span>
+                <strong data-ticket-sum>0,00&nbsp;€</strong>
+              </div>
+
+              <div class="ticket-actions">
+                <a class="btn btn--fire btn--block" href="tel:{{telefon.link}}">
+                  <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> <span data-ticket-cta>Jetzt anrufen</span>
+                </a>
+                <div class="ticket-tools" data-ticket-tools hidden>
+                  <button class="ticket-tool" type="button" data-ticket-share><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg> <span data-ticket-share-label>Teilen</span></button>
+                  <button class="ticket-tool" type="button" data-ticket-clear><svg class="icon" aria-hidden="true"><use href="#i-trash"/></svg> Leeren</button>
+                </div>
+              </div>
+
+              <p class="ticket-note">Kein Online-Shop: Der Zettel ist nur deine Merkhilfe, bestellt wird am Telefon. Er bleibt ausschließlich in diesem Browser-Tab gespeichert.</p>
+              </div>
+            </div>
+
+            <div class="ticket-status" data-status>
+              <span class="status-dot" aria-hidden="true"></span>
+              <span data-status-long>{{zeiten.kurz}}</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== GUT ZU WISSEN ===================== -->
+    <section class="section section--paper-2 infos" aria-labelledby="infos-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="kicker kicker--line">Gut zu wissen</p>
+            <h2 class="section-title" id="infos-title">Kleingedrucktes, <em class="accent">groß</em> geschrieben.</h2>
+          </div>
+        </div>
+        <ul class="info-cards">
+          <li class="info-card" data-reveal>
+            <span class="info-icon"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg></span>
+            <h3>Allergene &amp; Zusatzstoffe</h3>
+            <p>Frag uns vor deiner Bestellung – an der Theke oder am Telefon. Wir sagen dir genau, was in deinem Essen steckt.</p>
+          </li>
+          <li class="info-card" data-reveal style="--d:.06s">
+            <span class="info-icon"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg></span>
+            <h3>{{stat.vegetarisch}} vegetarische Gerichte</h3>
+            <p>Mit „Veggie“ und „Vegan“ gekennzeichnet. Über den Schalter oben blendest du alles andere aus.</p>
+          </li>
+          <li class="info-card" data-reveal style="--d:.12s">
+            <span class="info-icon"><svg class="icon" aria-hidden="true"><use href="#i-euro"/></svg></span>
+            <h3>Preise</h3>
+            <p>Alle Preise in Euro inklusive Mehrwertsteuer. Bezahlt wird bei Abholung im Laden. Es gelten unsere <a href="agb.html">AGB</a>.</p>
+          </li>
+          <li class="info-card" data-reveal style="--d:.18s">
+            <span class="info-icon"><svg class="icon" aria-hidden="true"><use href="#i-print"/></svg></span>
+            <h3>Karte zum Mitnehmen</h3>
+            <p>Für den Kühlschrank oder das Büro-Brett: die komplette Karte als Ausdruck.</p>
+            <button class="btn btn--dark btn--sm" type="button" data-print><svg class="icon" aria-hidden="true"><use href="#i-print"/></svg> Karte drucken</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    {{> callband bild=ja}}

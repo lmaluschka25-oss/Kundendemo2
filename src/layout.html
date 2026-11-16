@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- Generiert aus src/seiten/{{datei}} – bitte dort bearbeiten und danach „node tools/build.mjs“ ausführen. -->
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{titel}}</title>
+  <meta name="description" content="{{beschreibung}}">
+  {{#if robots}}<meta name="robots" content="{{robots}}">{{else}}<meta name="robots" content="index, follow, max-image-preview:large">{{/if}}
+  <link rel="canonical" href="{{basis}}/{{pfad}}">
+  <meta name="theme-color" content="#0f0b09">
+  <meta name="color-scheme" content="dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="{{name}}">
+  <meta property="og:title" content="{{titel}}">
+  <meta property="og:description" content="{{beschreibung}}">
+  <meta property="og:url" content="{{basis}}/{{pfad}}">
+  <meta property="og:image" content="{{basis}}/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{name}} – Frisch vom Spieß. Heiß aus dem Ofen.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dmsans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-serif-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+  {{#if hero_bild}}<link rel="preload" as="image" media="(min-width: 901px)" href="assets/img/hero-spiess-960.webp" imagesrcset="assets/img/hero-spiess-640.webp 640w, assets/img/hero-spiess-960.webp 960w, assets/img/hero-spiess-1400.webp 1400w" imagesizes="(max-width: 900px) 84vw, 440px">{{/if}}
+  <link rel="stylesheet" href="assets/css/style.css?v={{v.css}}">
+  {{schema}}
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="speculationrules">{"prerender":[{"where":{"href_matches":"/*"},"eagerness":"moderate"}]}</script>
+</head>
+<body class="{{koerper}}">
+  {{> icons}}
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+  {{> header}}
+  {{> mobilmenue}}
+
+  <main id="inhalt">
+<!--INHALT-->
+  </main>
+
+  {{> footer}}
+  {{> mobilleiste}}
+
+  <p class="toast" data-toast role="status" aria-live="polite"></p>
+  {{daten}}
+  <script src="assets/js/main.js?v={{v.js}}" defer></script>
+</body>
+</html>

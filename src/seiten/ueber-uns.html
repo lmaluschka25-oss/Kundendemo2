@@ -1,0 +1,151 @@
+---
+titel: Über uns – Arin's Kebap & Pizza Haus Beilngries
+beschreibung: Neuer Inhaber, neuer Name: Arin's Kebap & Pizza Haus in der Ringstraße 22 in Beilngries. Zwei Feuer – Spieß und Ofen – und eine Theke, an der niemand hungrig bleibt.
+seite: ueber-uns
+nav: ueber-uns
+krume: Über uns
+koerper: page-about
+---
+    <!-- ===================== KOPF ===================== -->
+    <section class="split-hero" aria-labelledby="page-title">
+      <div class="split-hero-media" aria-hidden="true">
+        <figure class="split-pane split-pane--left">
+          <img src="assets/img/hero-spiess-960.webp" srcset="assets/img/hero-spiess-640.webp 640w, assets/img/hero-spiess-960.webp 960w, assets/img/hero-spiess-1400.webp 1400w" sizes="50vw" width="960" height="1439" fetchpriority="high" alt="">
+          <figcaption class="split-label"><span>Feuer N°&#8239;1</span>Der Spieß</figcaption>
+        </figure>
+        <figure class="split-pane split-pane--right">
+          <img src="assets/img/feuer-800.webp" srcset="assets/img/feuer-800.webp 800w, assets/img/feuer-1400.webp 1400w" sizes="50vw" width="800" height="1200" alt="">
+          <figcaption class="split-label"><span>Feuer N°&#8239;2</span>Der Ofen</figcaption>
+        </figure>
+      </div>
+      <canvas class="embers" data-embers aria-hidden="true"></canvas>
+      <div class="container split-hero-copy">
+        <p class="eyebrow hero-in" style="--i:0">Über uns</p>
+        <h1 class="page-title page-title--xl hero-in" id="page-title" style="--i:1">Ein Haus.<br><em class="accent">Zwei Feuer.</em></h1>
+        <p class="page-lead hero-in" style="--i:2">Der Spieß und der Ofen – und dazwischen eine Theke, an der niemand hungrig bleibt. Das ist {{name_typo}} in {{ort}}.</p>
+      </div>
+    </section>
+
+    <!-- ===================== NEUSTART ===================== -->
+    <section class="section section--paper neustart" id="neustart" aria-labelledby="neustart-title">
+      <div class="container neustart-grid">
+        <div class="sign" data-reveal aria-hidden="true">
+          <span class="sign-small">{{strasse}} · {{ort}}</span>
+          <span class="sign-name">{{kurzname_typo}}</span>
+          <span class="sign-sub">{{unterzeile}}</span>
+          <span class="sign-open" data-status><span class="status-dot"></span><span data-status-short>{{zeiten.kurz}}</span></span>
+        </div>
+        <div class="neustart-copy">
+          <p class="kicker" data-reveal><span class="kicker-no">01</span>Neustart</p>
+          <h2 class="section-title" id="neustart-title" data-reveal>Neuer Name.<br>Neue Leitung.<br><em class="accent">Gleiche Adresse.</em></h2>
+          <p class="lead" data-reveal>Die {{strasse}} hat einen neuen Inhaber – und einen neuen Namen: {{name_typo}}. Ein moderner Laden, ehrliches Essen und der Anspruch, dass jeder Döner und jede Pizza so über die Theke geht, als wär’s die erste des Tages.</p>
+          <p data-reveal>Wer früher schon hier gegessen hat: Komm vorbei und sag uns ehrlich, wie’s dir schmeckt. Wer zum ersten Mal da ist: Willkommen – der Döner ist ein guter Anfang.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ZWEI FEUER ===================== -->
+    <section class="section section--dark fires" aria-labelledby="fires-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="kicker"><span class="kicker-no">02</span>Zwei Feuer</p>
+            <h2 class="section-title" id="fires-title">Am Spieß geschnitten.<br><em class="accent">Im Ofen gebacken.</em></h2>
+          </div>
+          <p class="section-intro">Zwei Küchen unter einem Dach – und du musst dich nicht entscheiden. Döner für dich, Pizza für die Kinder, Lahmacun für den Kollegen: Alles kommt aus einer Hand.</p>
+        </div>
+
+        <div class="fires-grid">
+          <article class="fire-card" data-reveal>
+            <figure class="fire-card-img">
+              <img src="assets/img/spiess-schnitt-800.webp" srcset="assets/img/spiess-schnitt-480.webp 480w, assets/img/spiess-schnitt-800.webp 800w, assets/img/spiess-schnitt-1200.webp 1200w" sizes="(max-width: 900px) 92vw, 560px" width="800" height="630" loading="lazy" decoding="async" alt="Dönerfleisch wird mit dem langen Messer vom Spieß geschnitten">
+            </figure>
+            <div class="fire-card-body">
+              <p class="fire-card-label">Feuer N°&#8239;1</p>
+              <h3>Der Spieß</h3>
+              <p>Außen knusprig, innen saftig und frisch geschnitten: im Fladenbrot, als Dürüm, in der Box oder auf dem Teller.</p>
+              <ul class="fire-links">
+                <li><a href="speisekarte.html#kat-doener">Döner <span>{{anzahl:doener}}</span></a></li>
+                <li><a href="speisekarte.html#kat-duerum">Dürüm <span>{{anzahl:duerum}}</span></a></li>
+                <li><a href="speisekarte.html#kat-boxen">Boxen <span>{{anzahl:boxen}}</span></a></li>
+                <li><a href="speisekarte.html#kat-teller">Teller <span>{{anzahl:teller}}</span></a></li>
+              </ul>
+            </div>
+          </article>
+          <article class="fire-card" data-reveal style="--d:.1s">
+            <figure class="fire-card-img">
+              <img src="assets/img/pizza-ofen-1000.webp" srcset="assets/img/pizza-ofen-1000.webp 1000w, assets/img/pizza-ofen-1800.webp 1800w" sizes="(max-width: 900px) 92vw, 560px" width="1000" height="800" loading="lazy" decoding="async" alt="Frisch gebackene Pizza vor dem glühenden Ofen" style="object-position: 50% 62%">
+            </figure>
+            <div class="fire-card-body">
+              <p class="fire-card-label">Feuer N°&#8239;2</p>
+              <h3>Der Ofen</h3>
+              <p>{{stat.pizzen}} Pizzen, Pide und Lahmacun – heiß gebacken, mit knusprigem Rand und Käse, der Fäden zieht.</p>
+              <ul class="fire-links">
+                <li><a href="speisekarte.html#kat-pizza">Pizza <span>{{anzahl:pizza}}</span></a></li>
+                <li><a href="speisekarte.html#kat-pide">Pide <span>{{anzahl:pide}}</span></a></li>
+                <li><a href="speisekarte.html#kat-lahmacun">Lahmacun <span>{{anzahl:lahmacun}}</span></a></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VERSPRECHEN ===================== -->
+    <section class="section section--paper vows" aria-labelledby="vows-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="kicker"><span class="kicker-no">03</span>Unser Wort</p>
+            <h2 class="section-title" id="vows-title">Vier Dinge, auf die du dich <em class="accent">verlassen</em> kannst.</h2>
+          </div>
+        </div>
+        <ol class="vows-list">
+          <li data-reveal>
+            <span class="vow-no" aria-hidden="true">01</span>
+            <h3>Frisch zubereitet</h3>
+            <p>Fleisch frisch vom Spieß, Pizza frisch aus dem Ofen, dazu frischer Salat – zubereitet wird, wenn du bestellst.</p>
+          </li>
+          <li data-reveal style="--d:.06s">
+            <span class="vow-no" aria-hidden="true">02</span>
+            <h3>Großzügig portioniert</h3>
+            <p>Bei uns geht keiner hungrig nach Hause. Versprochen.</p>
+          </li>
+          <li data-reveal style="--d:.12s">
+            <span class="vow-no" aria-hidden="true">03</span>
+            <h3>Schnell auf der Hand</h3>
+            <p>Kurze Wartezeit, volle Geschmacksladung. Und wer vorher anruft, wartet gar nicht.</p>
+          </li>
+          <li data-reveal style="--d:.18s">
+            <span class="vow-no" aria-hidden="true">04</span>
+            <h3>Für jeden was dabei</h3>
+            <p>{{stat.vegetarisch}} vegetarische und vegane Gerichte – von Falafel über Pide bis Pizza. Und natürlich jede Menge vom Spieß.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== ZUHAUSE ===================== -->
+    <section class="section section--coal hometown" aria-labelledby="hometown-title">
+      <div class="hometown-word" aria-hidden="true">{{ort}}</div>
+      <div class="container hometown-grid">
+        <div data-reveal>
+          <p class="kicker"><span class="kicker-no">04</span>Zuhause</p>
+          <h2 class="section-title" id="hometown-title">Mitten im<br><em class="accent">Altmühltal.</em></h2>
+        </div>
+        <div class="hometown-copy" data-reveal style="--d:.1s">
+          <p class="lead">{{ort}} ist unser Zuhause – zwischen Altmühl, Sulz und Main-Donau-Kanal. Du findest uns in der {{strasse}}, {{lagehinweis}}.</p>
+          <p>Ob Mittagspause, Feierabend oder Zwischenstopp auf der Radtour durchs Altmühltal: Komm vorbei – wir freuen uns auf dich.</p>
+          <dl class="coords">
+            <div><dt>Breite</dt><dd>{{koord:lat}}</dd></div>
+            <div><dt>Länge</dt><dd>{{koord:lon}}</dd></div>
+            <div><dt>Adresse</dt><dd>{{strasse}}</dd></div>
+          </dl>
+          <a class="btn btn--fire btn--lg" href="besuch.html">Zeiten &amp; Anfahrt <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    {{> bewertung}}
+
+    {{> callband bild=ja}}

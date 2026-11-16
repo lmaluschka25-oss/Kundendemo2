@@ -1,0 +1,144 @@
+---
+titel: Öffnungszeiten & Anfahrt – Arin's Kebap & Pizza Haus Beilngries
+beschreibung: Arin's Kebap & Pizza Haus, Ringstraße 22, 92339 Beilngries – direkt gegenüber der Polizeiinspektion. {{zeiten.kurz}}. Route planen oder vorbestellen: {{telefon.anzeige}}.
+seite: besuch
+nav: besuch
+krume: Öffnungszeiten & Anfahrt
+koerper: page-visit
+---
+    <!-- ===================== KOPF ===================== -->
+    <section class="page-hero page-hero--visit" aria-labelledby="page-title">
+      <canvas class="embers" data-embers aria-hidden="true"></canvas>
+      <div class="page-hero-word" aria-hidden="true">22</div>
+      <div class="container page-hero-grid">
+        <div class="page-hero-copy">
+          <p class="eyebrow hero-in" style="--i:0">Zeiten &amp; Anfahrt</p>
+          <h1 class="page-title page-title--xl hero-in" id="page-title" style="--i:1">{{strasse}}<em class="accent">.</em></h1>
+          <p class="page-lead hero-in" style="--i:2">{{plz}} {{ort}} – {{lagehinweis}}. {{zeiten.kurz}}: zum Mitnehmen oder auf der Terrasse.</p>
+          <div class="hero-ctas hero-in" style="--i:3">
+            <a class="btn btn--fire btn--lg" data-route href="{{route.google}}" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-route"/></svg> Route planen
+            </a>
+            <a class="btn btn--ghost btn--lg" href="tel:{{telefon.link}}">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> {{telefon.anzeige}}
+            </a>
+          </div>
+        </div>
+        <div class="live-card hero-in" style="--i:3" data-status>
+          <p class="live-card-label">Gerade</p>
+          <p class="live-card-state"><span class="status-dot" aria-hidden="true"></span><strong data-status-title>{{#if zeiten.taeglich}}Täglich geöffnet{{else}}Öffnungszeiten{{/if}}</strong></p>
+          <p class="live-card-detail" data-status-detail>{{zeiten.kurz}}</p>
+          <p class="live-card-clock"><span data-clock>--:--</span> Uhr in {{ort}}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ZEITEN ===================== -->
+    <section class="section section--dark hours" id="zeiten" aria-labelledby="hours-title">
+      <div class="container hours-grid">
+        <div class="hours-dial" data-reveal>
+          <div class="dial dial--xl" data-dial aria-hidden="true"></div>
+          <p class="dial-caption">24 Stunden, ein Feuer: Der leuchtende Bogen zeigt, wann wir heute für dich da sind.</p>
+        </div>
+        <div class="hours-copy">
+          <p class="kicker" data-reveal><span class="kicker-no">01</span>Öffnungszeiten</p>
+          <h2 class="section-title" id="hours-title" data-reveal>{{#if zeiten.taeglich}}Jeden Tag<br><em class="accent">für dich da.</em>{{else}}Wann wir<br><em class="accent">für dich da sind.</em>{{/if}}</h2>
+          <div class="card hours-card" data-reveal>
+            <div class="live-status" data-status>
+              <span class="status-dot" aria-hidden="true"></span>
+              <div>
+                <strong data-status-title>{{#if zeiten.taeglich}}Täglich geöffnet{{else}}Öffnungszeiten{{/if}}</strong>
+                <span data-status-detail>{{zeiten.kurz}}</span>
+              </div>
+            </div>
+            <ul class="hours-list" data-hours>
+            {{zeiten:liste}}
+            </ul>
+          </div>
+          <p class="hours-note" data-reveal><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg> {{zeiten_hinweis}}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ANFAHRT ===================== -->
+    <section class="section section--coal visit" id="anfahrt" aria-labelledby="visit-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div>
+            <p class="kicker"><span class="kicker-no">02</span>Anfahrt</p>
+            <h2 class="section-title" id="visit-title">Der wohl <em class="accent">sicherste Döner</em><br>in ganz {{ort}}.</h2>
+          </div>
+          <p class="section-intro">Wir sind {{lagehinweis}}. Nicht zu verfehlen – und falls doch: Die Kollegen gegenüber helfen sicher gern weiter.</p>
+        </div>
+
+        <figure class="map-card map-card--wide" data-reveal>
+          <a class="map-link" data-route href="{{route.google}}" target="_blank" rel="noopener" aria-label="Route zu {{name}} in Google Maps öffnen">
+{{karte}}
+            <span class="map-hint"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg> Route in Karten-App öffnen</span>
+          </a>
+          <div class="map-address">
+            <p class="map-address-name">{{name_typo}}</p>
+            <address>{{strasse}}<br>{{plz}} {{ort}}</address>
+            <p class="map-address-hint"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg> Gegenüber der Polizeiinspektion</p>
+          </div>
+          <figcaption>Kartendaten © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>-Mitwirkende</figcaption>
+        </figure>
+
+        <ul class="ways">
+          <li class="way" data-reveal>
+            <span class="way-icon"><svg class="icon" aria-hidden="true"><use href="#i-walk"/></svg></span>
+            <h3>Zu Fuß</h3>
+            <p>Nur ein paar Schritte von der Altstadt entfernt – einfach der Ringstraße folgen, bis du die Polizeiinspektion siehst.</p>
+          </li>
+          <li class="way" data-reveal style="--d:.06s">
+            <span class="way-icon"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg></span>
+            <h3>Mit dem Auto</h3>
+            <p>Parkmöglichkeiten findest du in der Nähe. Am schnellsten geht’s mit der Route direkt in deiner Karten-App.</p>
+          </li>
+          <li class="way" data-reveal style="--d:.12s">
+            <span class="way-icon"><svg class="icon" aria-hidden="true"><use href="#i-bike"/></svg></span>
+            <h3>Mit dem Rad</h3>
+            <p>Auf Radtour durchs Altmühltal? Mach Pause bei uns und tank auf – heiß zum Mitnehmen oder auf der Terrasse.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== FRAGEN ===================== -->
+    <section class="section section--paper faq-section" id="fragen" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="faq-head" data-reveal>
+          <p class="kicker"><span class="kicker-no">03</span>Gut zu wissen</p>
+          <h2 class="section-title" id="faq-title">Fragen?<br><em class="accent">Antworten.</em></h2>
+          <p class="section-intro">Und wenn deine Frage nicht dabei ist: einfach anrufen unter <a href="tel:{{telefon.link}}">{{telefon.anzeige}}</a>.</p>
+        </div>
+        <div class="faq" data-reveal style="--d:.1s">
+          <details name="faq" open>
+            <summary>Kann ich telefonisch vorbestellen?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Ja, sehr gern. Ruf uns unter {{telefon.anzeige}} an und sag uns, was du möchtest und wann du kommst – dann ist dein Essen fertig, wenn du da bist. Tipp: Mit dem <a href="speisekarte.html">Bestellzettel in der Speisekarte</a> hast du alles beisammen.</p>
+          </details>
+          <details name="faq">
+            <summary>Bestellen für die ganze Gruppe – geht das?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Klar. Ob Büro, Verein oder Familie: Stell die Bestellung mit dem Bestellzettel zusammen, teile sie mit den anderen und ruf am besten etwas früher an. Dann können wir in Ruhe planen.</p>
+          </details>
+          <details name="faq">
+            <summary>Gibt es vegetarische und vegane Gerichte?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Ja, {{stat.vegetarisch}} Stück: Falafel im Brot, als Dürüm, Box oder Teller, Pide mit Spinat oder Gemüse, viele Pizzen, Salate – und mit der Pizza Vegana auch eine vegane Pizza ohne Käse. In der <a href="speisekarte.html">Speisekarte</a> kannst du nach „Veggie“ filtern.</p>
+          </details>
+          <details name="faq">
+            <summary>Wo bekomme ich Infos zu Allergenen?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Frag einfach unser Team vor der Bestellung – an der Theke oder am Telefon. Wir geben dir gern Auskunft zu Allergenen und Zusatzstoffen in unseren Gerichten.</p>
+          </details>
+          <details name="faq">
+            <summary>Kann ich bei euch draußen sitzen?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Ja – bei gutem Wetter auf unserer Terrasse. Oder du nimmst dein Essen heiß mit.</p>
+          </details>
+          <details name="faq">
+            <summary>Wann habt ihr geöffnet?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>{{zeiten.kurz}}. {{zeiten_hinweis}}</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    {{> callband bild=ja}}

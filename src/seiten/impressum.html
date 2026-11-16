@@ -1,0 +1,85 @@
+---
+titel: Impressum – Arin's Kebap & Pizza Haus Beilngries
+beschreibung: Impressum von Arin's Kebap & Pizza Haus, Ringstraße 22, 92339 Beilngries – Angaben gemäß § 5 DDG.
+seite: impressum
+nav: impressum
+krume: Impressum
+robots: noindex, follow
+koerper: page-legal
+---
+    <section class="page-hero page-hero--legal" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow hero-in" style="--i:0">Rechtliches</p>
+        <h1 class="page-title hero-in" id="page-title" style="--i:1">Impressum</h1>
+        <p class="page-lead hero-in" style="--i:2">Angaben gemäß §&nbsp;5 Digitale-Dienste-Gesetz (DDG).</p>
+      </div>
+    </section>
+
+    <div class="legal-wrap">
+      <div class="container legal-layout legal-layout--single">
+        <article class="legal-body">
+          <!--TODO-HINWEIS-->
+
+          <div class="legal-cards">
+            <section class="legal-card" aria-labelledby="anbieter">
+              <h2 id="anbieter">Diensteanbieter</h2>
+              <p>
+                <strong>{{name}}</strong><br>
+                Inhaber: {{todo:inhaber|Vor- und Nachname des Inhabers}}<br>
+                {{strasse}}<br>
+                {{plz}} {{ort}}<br>
+                Deutschland
+              </p>
+            </section>
+
+            <section class="legal-card" aria-labelledby="kontakt">
+              <h2 id="kontakt">Kontakt</h2>
+              <p>
+                Telefon: <a href="tel:{{telefon.link}}">{{telefon.anzeige}}</a><br>
+                E-Mail: {{mail:E-Mail-Adresse}}
+              </p>
+            </section>
+          </div>
+
+          {{#if ust_id=keine}}{{else}}<section aria-labelledby="ust">
+            <h2 id="ust">Umsatzsteuer-Identifikationsnummer</h2>
+            <p>Umsatzsteuer-Identifikationsnummer gemäß §&nbsp;27a Umsatzsteuergesetz: {{todo:ust_id|USt-IdNr. – falls keine vorhanden, in betrieb.json „keine“ eintragen}}</p>
+          </section>{{/if}}
+
+          {{#if wirtschafts_id}}<section aria-labelledby="wid">
+            <h2 id="wid">Wirtschafts-Identifikationsnummer</h2>
+            <p>Wirtschafts-Identifikationsnummer gemäß §&nbsp;139c Abgabenordnung: {{wirtschafts_id}}</p>
+          </section>{{/if}}
+
+          {{#if handelsregister}}<section aria-labelledby="register">
+            <h2 id="register">Registereintrag</h2>
+            <p>{{handelsregister}}</p>
+          </section>{{/if}}
+
+          {{#if aufsichtsbehoerde}}<section aria-labelledby="aufsicht">
+            <h2 id="aufsicht">Zuständige Aufsichtsbehörde</h2>
+            <p>{{aufsichtsbehoerde}}</p>
+          </section>{{/if}}
+
+          <section aria-labelledby="streit">
+            <h2 id="streit">Verbraucherstreitbeilegung</h2>
+            <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+          </section>
+
+          <section aria-labelledby="credits">
+            <h2 id="credits">Bildnachweise, Karte und Schriften</h2>
+            <p>
+              Fotos: Unsplash (Unsplash-Lizenz) – engin akyurt, Yoad Shejtman, Ruyan Ayten, Husien Bisky, mahsa shamshiri fard,
+              P S, Sahal Hameed, SHOT, Anton, Alexander Mils, Klara Kulikova, Francis Ledger.
+            </p>
+            <p>
+              Kartendaten: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>-Mitwirkende,
+              verfügbar unter der Open Database License (ODbL).
+            </p>
+            <p>Schriften: Bricolage Grotesque, Instrument Serif und DM Sans unter der SIL Open Font License 1.1 – lokal eingebunden.</p>
+          </section>
+
+          <p class="legal-stand">Stand: {{rechtstexte_stand}}</p>
+        </article>
+      </div>
+    </div>

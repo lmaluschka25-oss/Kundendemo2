@@ -1,0 +1,5 @@
+<nav class="mobile-bar" aria-label="Schnellaktionen">
+    <a class="mobile-bar-call" href="tel:{{telefon.link}}"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Anrufen</a>
+    <a data-route href="{{route.google}}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg> Route</a>
+    {{#if seite=speisekarte}}<button class="mobile-bar-ticket" type="button" data-ticket-open aria-controls="bestellzettel" aria-expanded="false"><svg class="icon" aria-hidden="true"><use href="#i-receipt"/></svg> Zettel <span class="mobile-bar-count" data-ticket-count>0</span></button>{{else}}<a href="speisekarte.html"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg> Karte</a>{{/if}}
+  </nav>

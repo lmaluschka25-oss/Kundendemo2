@@ -1,0 +1,5 @@
+# Netlify: interne Arbeitsdateien nicht öffentlich ausliefern (zeigt stattdessen die 404-Seite)
+/src/*          /404.html  404!
+/tools/*        /404.html  404!
+/content/*      /404.html  404!
+/README.md      /404.html  404!

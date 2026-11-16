@@ -1,0 +1,19 @@
+<div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobile Navigation">
+      <a href="index.html"{{aktiv:start}}><span class="mm-no">01</span>Start</a>
+      <a href="speisekarte.html"{{aktiv:speisekarte}}><span class="mm-no">02</span>Speisekarte</a>
+      <a href="ueber-uns.html"{{aktiv:ueber-uns}}><span class="mm-no">03</span>Über uns</a>
+      <a href="besuch.html"{{aktiv:besuch}}><span class="mm-no">04</span>Zeiten &amp; Anfahrt</a>
+    </nav>
+    <div class="mobile-menu-foot">
+      <p class="mobile-menu-status" data-status>
+        <span class="status-dot" aria-hidden="true"></span>
+        <span data-status-long>{{zeiten.kurz}}</span>
+      </p>
+      <a class="btn btn--fire btn--lg" href="tel:{{telefon.link}}">
+        <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> {{telefon.anzeige}}
+      </a>
+      <p class="mobile-menu-meta">{{strasse}} · {{plz}} {{ort}}<br>
+        <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="agb.html">AGB</a></p>
+    </div>
+  </div>
