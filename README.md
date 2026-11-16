@@ -1,6 +1,6 @@
-# Ewin's Kebap & Pizza Haus – Website
+# Arin's Kebap & Pizza Haus – Website
 
-One-Pager für **Ewin's Kebap & Pizza Haus**, Ringstraße 22, 92339 Beilngries (gegenüber der Polizeiinspektion).
+One-Pager für **Arin's Kebap & Pizza Haus**, Ringstraße 22, 92339 Beilngries (gegenüber der Polizeiinspektion).
 Reines HTML/CSS/JS ohne Frameworks, ohne Cookies und ohne externe Dienste.
 
 ## Ansehen
@@ -11,7 +11,7 @@ Reines HTML/CSS/JS ohne Frameworks, ohne Cookies und ohne externe Dienste.
 ## Was drin ist
 
 - Hero mit Live-Status („Jetzt geöffnet · bis 20:30“, automatisch nach deutscher Zeit), Glut-Funken-Animation und Anruf-Button
-- Klassiker-Kacheln (Döner, Ewin's Pizza, Dürüm, Lahmacun, Pide, Falafel), auf dem Handy wischbar
+- Klassiker-Kacheln (Döner, Arin's Pizza, Dürüm, Lahmacun, Pide, Falafel), auf dem Handy wischbar
 - Komplette Speisekarte (73 Gerichte, 10 Kategorien) mit Suche (findet auch „doner“ ohne Umlaut), Veggie-Filter und mitlaufenden Kategorien
 - Echte Gästebewertung (Tripadvisor, 5,0)
 - Öffnungszeiten mit „Heute“-Markierung und Restzeit bis Ladenschluss
@@ -39,7 +39,7 @@ Lighthouse (lokal mit gzip gemessen): Desktop 100/100/100/100, Mobil Performance
 - [ ] **Speisekarte und Preise mit dem Inhaber abgleichen.** Basis ist die Online-Karte von Ewin's Kebabhaus in Greding. „Pizza Beilngries“ ist ein Namensvorschlag.
 - [ ] **Öffnungszeiten bestätigen** (laut Online-Einträgen täglich 10:30–20:30 Uhr)
 - [ ] **Eigene Fotos** vom Laden, Team und den Gerichten (aktuell lizenzfreie Unsplash-Fotos als Platzhalter)
-- [ ] **Impressum & Datenschutz** ausfüllen (gelb markierte Platzhalter) und rechtlich prüfen lassen
+- [ ] **Impressum & Datenschutz**: Inhabername, E-Mail, USt-IdNr. und Log-Speicherdauer (gelb markiert) beim Termin mit Arin klären, danach rechtlich prüfen lassen
 - [ ] **Domain** festlegen. Dann `og:image` auf eine absolute URL umstellen (`https://…/assets/img/og-image.jpg`) und einen `canonical`-Link ergänzen
 - [ ] Website im Google-Unternehmensprofil eintragen. In OpenStreetMap steht unter Ringstraße 22 noch der alte Name „Arin“, das sollte korrigiert werden
 

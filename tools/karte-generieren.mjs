@@ -153,7 +153,7 @@ const policeC = policePoly ? centroid(policePoly) : null;
 const shopC = shopPoly ? centroid(shopPoly) : [0, 0];
 
 const svg = `<svg class="karte" viewBox="${vb}" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="karte-titel" xmlns="http://www.w3.org/2000/svg">
-<title id="karte-titel">Lageplan: Ewin's Kebap &amp; Pizza Haus, Ringstraße 22 in Beilngries, gegenüber der Polizeiinspektion</title>
+<title id="karte-titel">Lageplan: Arin's Kebap &amp; Pizza Haus, Ringstraße 22 in Beilngries, gegenüber der Polizeiinspektion</title>
 <style>
 .k-green{fill:#1c2417}
 .k-water{fill:#143039}
@@ -208,7 +208,7 @@ ${shopPoly ? `<path class="k-shop" d="${d(shopPoly, true)}"/>` : ''}
 <circle class="k-pulse" r="14"/><circle class="k-pulse k-pulse--2" r="14"/>
 <circle class="k-dot" r="9"/>
 </g>
-<g class="k-shop-label" transform="translate(${Math.round(shopC[0]) + 18} ${Math.round(shopC[1]) + 46})"><rect x="0" y="-19" width="128" height="34" rx="17"/><text x="64" y="4" text-anchor="middle">Ewin's</text></g>
+<g class="k-shop-label" transform="translate(${Math.round(shopC[0]) + 18} ${Math.round(shopC[1]) + 46})"><rect x="0" y="-19" width="128" height="34" rx="17"/><text x="64" y="4" text-anchor="middle">Arin's</text></g>
 <rect x="${VIEW.x - 50}" y="${VIEW.y - 50}" width="${VIEW.w + 100}" height="${VIEW.h + 100}" fill="url(#karte-vignette)" pointer-events="none"/>
 </svg>`;
 

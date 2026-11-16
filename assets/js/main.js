@@ -1,4 +1,4 @@
-/* Ewin's Kebap & Pizza Haus – Interaktionen (ohne Frameworks, ohne Tracking) */
+/* Arin's Kebap & Pizza Haus – Interaktionen (ohne Frameworks, ohne Tracking) */
 (() => {
   'use strict';
 

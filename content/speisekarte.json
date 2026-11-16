@@ -1,5 +1,5 @@
 {
-  "_hinweis": "Speisekarte von Ewin's Kebap & Pizza Haus Beilngries. Nach Änderungen ausführen: node tools/build.mjs",
+  "_hinweis": "Speisekarte von Arin's Kebap & Pizza Haus Beilngries. Nach Änderungen ausführen: node tools/build.mjs",
   "fussnote": "Alle Preise in Euro inkl. MwSt. Infos zu Allergenen und Zusatzstoffen bekommst du gerne bei uns an der Theke. Änderungen und Irrtümer vorbehalten.",
   "kategorien": [
     {
@@ -94,7 +94,7 @@
         { "name": "Gamberetti", "beschreibung": "Shrimps", "preis": 10.0, "tags": [] },
         { "name": "Frutti di Mare", "beschreibung": "Meeresfrüchte", "preis": 10.0, "tags": [] },
         { "name": "Döner-Pizza", "beschreibung": "Dönerfleisch, Zwiebeln", "preis": 10.0, "tags": ["beliebt"] },
-        { "name": "Ewin's Pizza", "beschreibung": "Sucuk, Champignons, scharfe Peperoni", "preis": 10.0, "tags": ["haus", "scharf"] },
+        { "name": "Arin's Pizza", "beschreibung": "Sucuk, Champignons, scharfe Peperoni", "preis": 10.0, "tags": ["haus", "scharf"] },
         { "name": "Pizza Beilngries", "beschreibung": "Dönerfleisch, Peperoni, Paprika", "preis": 11.0, "tags": ["haus"] }
       ]
     },
