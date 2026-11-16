@@ -1,0 +1,149 @@
+{
+  "_hinweis": "Speisekarte von Ewin's Kebap & Pizza Haus Beilngries. Nach Änderungen ausführen: node tools/build.mjs",
+  "fussnote": "Alle Preise in Euro inkl. MwSt. Infos zu Allergenen und Zusatzstoffen bekommst du gerne bei uns an der Theke. Änderungen und Irrtümer vorbehalten.",
+  "kategorien": [
+    {
+      "id": "doener",
+      "name": "Döner",
+      "untertitel": "Im knusprigen Fladenbrot",
+      "gerichte": [
+        { "name": "Döner", "beschreibung": "Geflügelfleisch, frischer Salat, Soße nach Wahl", "preis": 7.5, "tags": ["beliebt"] },
+        { "name": "Big Döner", "beschreibung": "Extra viel Geflügelfleisch, Salat, Soße", "preis": 9.5, "tags": [] },
+        { "name": "Döner mit Weißkäse", "beschreibung": "Geflügelfleisch, Weißkäse, Salat, Soße", "preis": 8.5, "tags": [] },
+        { "name": "Vegetarischer Döner", "beschreibung": "Weißkäse, Salat, Soße", "preis": 6.5, "tags": ["vegetarisch"] },
+        { "name": "Falafel im Brot", "beschreibung": "Knusprige Falafel, Salat, Soße", "preis": 7.0, "tags": ["vegetarisch"] }
+      ]
+    },
+    {
+      "id": "duerum",
+      "name": "Dürüm",
+      "untertitel": "Im dünnen Yufka gerollt",
+      "gerichte": [
+        { "name": "Dürüm", "beschreibung": "Geflügelfleisch, Salat, Soße", "preis": 8.5, "tags": ["beliebt"] },
+        { "name": "Dürüm mit Weißkäse", "beschreibung": "Geflügelfleisch, Weißkäse, Salat, Soße", "preis": 9.5, "tags": [] },
+        { "name": "Falafel-Dürüm", "beschreibung": "Falafel, Salat, Soße", "preis": 8.0, "tags": ["vegetarisch"] },
+        { "name": "Dürüm vegetarisch", "beschreibung": "Weißkäse, Salat, Soße", "preis": 7.5, "tags": ["vegetarisch"] }
+      ]
+    },
+    {
+      "id": "boxen",
+      "name": "Boxen",
+      "untertitel": "Alles drin, alles dran – zum Mitnehmen",
+      "gerichte": [
+        { "name": "Dönerbox", "beschreibung": "Geflügelfleisch, Pommes oder Reis, Salat, Soße", "preis": 7.5, "tags": [] },
+        { "name": "Döner Big-Box", "beschreibung": "Geflügelfleisch, Pommes und Reis, Salat, Soße", "preis": 9.5, "tags": [] },
+        { "name": "Falafel-Box", "beschreibung": "Falafel, Pommes oder Reis, Salat, Soße", "preis": 7.0, "tags": ["vegetarisch"] }
+      ]
+    },
+    {
+      "id": "teller",
+      "name": "Teller",
+      "untertitel": "Für den großen Hunger",
+      "gerichte": [
+        { "name": "Döner-Teller", "beschreibung": "Geflügelfleisch, Pommes oder Reis, Salat, Soße", "preis": 14.0, "tags": [] },
+        { "name": "Döner al Forno", "beschreibung": "Geflügelfleisch mit Pizzasoße und Käse überbacken, dazu Salat", "preis": 14.0, "tags": ["haus"] },
+        { "name": "Falafel-Teller", "beschreibung": "Falafel, Pommes oder Reis, Salat, Soße", "preis": 11.0, "tags": ["vegetarisch"] }
+      ]
+    },
+    {
+      "id": "lahmacun",
+      "name": "Lahmacun",
+      "untertitel": "Dünn, würzig, knusprig",
+      "gerichte": [
+        { "name": "Lahmacun mit Weißkäse", "beschreibung": "Salat, Weißkäse, Soße", "preis": 8.0, "tags": [] },
+        { "name": "Lahmacun mit Döner", "beschreibung": "Geflügelfleisch, Salat, Soße", "preis": 9.0, "tags": ["beliebt"] },
+        { "name": "Lahmacun mit Döner & Käse", "beschreibung": "Geflügelfleisch, Käse, Salat, Soße", "preis": 10.0, "tags": [] }
+      ]
+    },
+    {
+      "id": "pide",
+      "name": "Pide",
+      "untertitel": "Das türkische Schiffchen aus dem Ofen",
+      "gerichte": [
+        { "name": "Pide mit Käse", "beschreibung": "Käse, Zwiebeln", "preis": 7.5, "tags": ["vegetarisch"] },
+        { "name": "Pide Sucuk", "beschreibung": "Sucuk (Knoblauchwurst), Käse", "preis": 8.5, "tags": [] },
+        { "name": "Pide mit Hackfleisch", "beschreibung": "Hackfleisch, Käse", "preis": 8.5, "tags": [] },
+        { "name": "Pide Spinat", "beschreibung": "Spinat, Käse", "preis": 8.5, "tags": ["vegetarisch"] },
+        { "name": "Pide Gemüse", "beschreibung": "Mit frischem Gemüse", "preis": 8.5, "tags": ["vegetarisch"] },
+        { "name": "Pide mit Dönerfleisch", "beschreibung": "Geflügelfleisch, Käse", "preis": 9.0, "tags": [] }
+      ]
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "untertitel": "Alle Pizzen mit Tomatensoße und Käse",
+      "gerichte": [
+        { "name": "Pizzabrot", "beschreibung": "Frisch aus dem Ofen", "preis": 4.0, "tags": ["vegetarisch"] },
+        { "name": "Margherita", "beschreibung": "Tomatensoße, Käse", "preis": 7.5, "tags": ["vegetarisch"] },
+        { "name": "Funghi", "beschreibung": "Champignons", "preis": 8.5, "tags": ["vegetarisch"] },
+        { "name": "Salami", "beschreibung": "Würzige Salami", "preis": 8.5, "tags": [] },
+        { "name": "Prosciutto", "beschreibung": "Feiner Schinken", "preis": 8.5, "tags": [] },
+        { "name": "Mais", "beschreibung": "Süßer Mais", "preis": 8.5, "tags": ["vegetarisch"] },
+        { "name": "Spinat", "beschreibung": "Feiner Spinat, Zwiebeln", "preis": 8.5, "tags": ["vegetarisch"] },
+        { "name": "Vegana", "beschreibung": "Brokkoli, Paprika, Champignons, Mais – ohne Käse", "preis": 8.0, "tags": ["vegan"] },
+        { "name": "Vegetaria", "beschreibung": "Brokkoli, Paprika, Champignons, Mais", "preis": 9.0, "tags": ["vegetarisch"] },
+        { "name": "Hawaii", "beschreibung": "Schinken, Ananas", "preis": 9.0, "tags": [] },
+        { "name": "Regina", "beschreibung": "Schinken, Champignons", "preis": 9.0, "tags": [] },
+        { "name": "Tonno", "beschreibung": "Thunfisch, Zwiebeln", "preis": 9.0, "tags": [] },
+        { "name": "Mozzarella", "beschreibung": "Frische Tomaten, feiner Mozzarella", "preis": 9.0, "tags": ["vegetarisch"] },
+        { "name": "Napoli", "beschreibung": "Champignons, Oliven, Peperoni", "preis": 9.5, "tags": ["vegetarisch"] },
+        { "name": "Speciale", "beschreibung": "Schinken, Salami, Champignons", "preis": 9.5, "tags": [] },
+        { "name": "Quattro Formaggi", "beschreibung": "Vier verschiedene Käsesorten", "preis": 9.5, "tags": ["vegetarisch"] },
+        { "name": "Sucuk", "beschreibung": "Sucuk – türkische Knoblauchwurst", "preis": 9.5, "tags": [] },
+        { "name": "Diavolo", "beschreibung": "Schinken, Zwiebeln, scharfe Salami", "preis": 10.0, "tags": ["scharf"] },
+        { "name": "Gamberetti", "beschreibung": "Shrimps", "preis": 10.0, "tags": [] },
+        { "name": "Frutti di Mare", "beschreibung": "Meeresfrüchte", "preis": 10.0, "tags": [] },
+        { "name": "Döner-Pizza", "beschreibung": "Dönerfleisch, Zwiebeln", "preis": 10.0, "tags": ["beliebt"] },
+        { "name": "Ewin's Pizza", "beschreibung": "Sucuk, Champignons, scharfe Peperoni", "preis": 10.0, "tags": ["haus", "scharf"] },
+        { "name": "Pizza Beilngries", "beschreibung": "Dönerfleisch, Peperoni, Paprika", "preis": 11.0, "tags": ["haus"] }
+      ]
+    },
+    {
+      "id": "salate",
+      "name": "Salate",
+      "untertitel": "Knackig und frisch",
+      "gerichte": [
+        { "name": "Gemischter Salat", "beschreibung": "Eisbergsalat, Tomaten, Gurke, Paprika, Karotten, Zwiebeln, Dressing", "preis": 7.0, "tags": ["vegetarisch"] },
+        { "name": "Hirtensalat", "beschreibung": "Gemischter Salat mit Weißkäse", "preis": 8.5, "tags": ["vegetarisch"] },
+        { "name": "Hawaii-Salat", "beschreibung": "Gemischter Salat mit Schinken und Ananas", "preis": 8.5, "tags": [] },
+        { "name": "Thunfischsalat", "beschreibung": "Gemischter Salat mit Thunfisch", "preis": 9.0, "tags": [] },
+        { "name": "Falafelsalat", "beschreibung": "Gemischter Salat mit knusprigen Falafel", "preis": 9.0, "tags": ["vegetarisch"] },
+        { "name": "Dönersalat", "beschreibung": "Gemischter Salat mit Geflügelfleisch", "preis": 11.0, "tags": [] },
+        { "name": "Tomatensalat", "beschreibung": "Tomaten, Zwiebeln, Dressing", "preis": 5.0, "tags": ["vegan"] },
+        { "name": "Tzatziki", "beschreibung": "Gurke, Joghurtsoße", "preis": 5.5, "tags": ["vegetarisch"] }
+      ]
+    },
+    {
+      "id": "snacks",
+      "name": "Snacks",
+      "untertitel": "Für zwischendurch und als Beilage",
+      "gerichte": [
+        { "name": "Pommes", "beschreibung": "Goldgelb und knusprig", "preis": 5.0, "tags": [] },
+        { "name": "Currywurst mit Pommes", "beschreibung": "Der Klassiker", "preis": 9.5, "tags": [] },
+        { "name": "Chicken Nuggets", "beschreibung": "Knusprig paniert", "preis": 6.0, "tags": [] },
+        { "name": "Chicken Nuggets mit Pommes", "beschreibung": "Knusprig paniert, mit Pommes", "preis": 8.0, "tags": [] },
+        { "name": "Mozzarella-Sticks", "beschreibung": "Außen knusprig, innen zartschmelzend", "preis": 6.0, "tags": ["vegetarisch"] },
+        { "name": "Frühlingsrollen", "beschreibung": "Knusprig frittiert", "preis": 4.0, "tags": [] }
+      ]
+    },
+    {
+      "id": "getraenke",
+      "name": "Getränke",
+      "untertitel": "Kalt und heiß",
+      "gerichte": [
+        { "name": "Ayran", "beschreibung": "Erfrischendes Joghurtgetränk, 0,25 l", "preis": 1.5, "tags": ["beliebt"] },
+        { "name": "Cola / Cola Zero", "beschreibung": "0,3 l", "preis": 2.5, "tags": [] },
+        { "name": "Gazoz", "beschreibung": "Türkische Limonade, 0,33 l", "preis": 2.5, "tags": [] },
+        { "name": "Eistee", "beschreibung": "Eiskalt serviert", "preis": 2.5, "tags": [] },
+        { "name": "Apfelsaftschorle", "beschreibung": "55 % Fruchtgehalt", "preis": 2.5, "tags": [] },
+        { "name": "Orangenlimonade", "beschreibung": "Spritzig und fruchtig", "preis": 2.5, "tags": [] },
+        { "name": "Cola-Mix", "beschreibung": "Cola und Orange", "preis": 2.5, "tags": [] },
+        { "name": "Wasser", "beschreibung": "Still oder spritzig", "preis": 2.5, "tags": [] },
+        { "name": "Çay – Schwarzer Tee", "beschreibung": "Klassisch im Teeglas", "preis": 1.5, "tags": [] },
+        { "name": "Früchtetee", "beschreibung": "Heiß und aromatisch", "preis": 1.5, "tags": [] },
+        { "name": "Kaffee / Espresso", "beschreibung": "Frisch gebrüht", "preis": 2.0, "tags": [] },
+        { "name": "Cappuccino / Latte Macchiato", "beschreibung": "Mit cremigem Milchschaum", "preis": 2.5, "tags": [] }
+      ]
+    }
+  ]
+}
